@@ -1,0 +1,58 @@
+#empanadas {
+    height: auto;
+    width: 500px;
+}
+
+#meatloaf {
+    height: auto;
+    width: 500px;
+}
+
+#ravioli {
+    height: auto;
+    width: 500px;
+}
+
+#lets-do-this {
+    height: auto;
+    width: 400px;
+}
+
+#na-ah {
+    height: auto;
+    width: 465px;
+}
+
+#oh-yeah {
+    height: auto;
+    width: 533px;
+}
+
+#couple-cooking {
+    height: auto;
+    width: 533px;
+}
+
+body {
+    background-color: rgb(253, 253, 189);
+}
+
+p,
+.un-list {
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+p {
+    width: 1150px;
+}
+
+#center {
+    text-align: center;
+}
+
+#home-button {
+    background-color: rgb(245, 184, 15);
+    color: black;
+}
