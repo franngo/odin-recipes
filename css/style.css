@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Exo:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
 #empanadas {
     height: auto;
     width: 500px;
@@ -46,6 +48,31 @@ p,
 
 p {
     width: 1150px;
+    text-align: justify;
+}
+
+#keep-margin {
+    width: 1190px;
+    text-align: justify;
+}
+
+h3 {
+    font-family: Exo;
+}
+
+.main-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+}
+
+.food-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+}
+
+.mid-heading {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
 }
 
 #center {
