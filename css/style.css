@@ -40,7 +40,8 @@ body {
 }
 
 p,
-.un-list {
+.un-list,
+.centered-element {
     font-weight: 300;
     font-family: sans-serif;
     font-size: 17px;
@@ -75,11 +76,20 @@ h3 {
     font-size: 30px;
 }
 
-#center {
-    text-align: center;
+.center {
+    text-align: center
 }
 
 #home-button {
     background-color: rgb(245, 184, 15);
     color: black;
+}
+
+.normal-button {
+    background-color: rgb(195, 246, 255);
+    color: black;
+}
+
+#franngo {
+    color: rgb(209, 2, 2);
 }
