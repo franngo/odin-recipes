@@ -80,7 +80,7 @@ h3 {
     text-align: center
 }
 
-#home-button {
+.home-button {
     background-color: rgb(245, 184, 15);
     color: black;
 }
