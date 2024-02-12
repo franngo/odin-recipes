@@ -1,4 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Exo:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Exo:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&family=Concert+One&display=swap');
+
+html {
+    height: 1554.180px;
+}
+
+.web-background {
+    background-color: rgb(253, 253, 189);
+    margin: 0;
+}
+
+.just-color-background {
+    background-color: rgb(253, 253, 189);
+}
+
+.full-page {
+    display: block;
+    width: 910px;
+}
+
+.sidebar {
+    display: block;
+    float: inline-start;
+    height: 1554.180px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    border: 3px solid gray;
+    background-color: rgba(202, 228, 240, 0.247)
+}
+
+.content {
+    display: inline-block;
+    width: 670px;
+    border-left: 1px solid rgb(83, 83, 83);
+    padding-left: 30px;
+}
+
+#sidebar-message {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 135px;
+    margin-left: 15px;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Concert One', sans-serif;
+}
+
+#link1 {
+    display: block;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+#link2 {
+    display: block;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+#link3 {
+    display: block;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+#link4 {
+    display: block;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+#franngo {
+    color: rgb(209, 2, 2);
+    display: block;
+    font-size: 18px;
+    width: 120px;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
 
 #empanadas {
     height: auto;
@@ -33,10 +124,6 @@
 #couple-cooking {
     height: auto;
     width: 533px;
-}
-
-body {
-    background-color: rgb(253, 253, 189);
 }
 
 p,
@@ -88,8 +175,4 @@ h3 {
 .normal-button {
     background-color: rgb(195, 246, 255);
     color: black;
-}
-
-#franngo {
-    color: rgb(209, 2, 2);
 }
