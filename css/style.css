@@ -34,6 +34,7 @@ body {
     border: 3px solid gray;
     background-color: rgba(202, 228, 240, 0.247);
     height: 100%;
+    max-width: 208.2px;
     box-sizing: border-box;
 }
 
