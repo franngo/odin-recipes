@@ -44,6 +44,7 @@ body {
     border-left: 1px solid rgb(83, 83, 83);
     padding-left: 30px;
     height: 100%;
+    max-width: 701px;
 }
 
 #sidebar-message {
