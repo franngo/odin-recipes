@@ -7,7 +7,6 @@ body {
     overflow-x: hidden;
     width: 100%;
     height: 100%;
-    max-height: 1560.180px;
 }
 
 .web-background {
@@ -52,43 +51,59 @@ body {
     width: fit-content;
     margin-top: 135px;
     margin-left: 15px;
+    margin-bottom: 0;
     font-weight: 300;
     font-size: 30px;
     font-family: 'Concert One', sans-serif;
+    text-align: left;
 }
 
-#link1 {
+#first-link {
     display: block;
     margin-top: 25px;
     margin-left: 15px;
 }
 
-#link2 {
+.following-link {
     display: block;
     margin-top: 40px;
     margin-left: 15px;
 }
 
-#link3 {
-    display: block;
-    margin-top: 40px;
-    margin-left: 15px;
+.home-link {
+    background-color: rgb(245, 184, 15);
+    color: black;
+    border: 2px solid black;
+    padding: 1px;
+    width: fit-content;
+    display: inline-block;
+    margin: 0;
 }
 
-#link4 {
-    display: block;
-    margin-top: 40px;
-    margin-left: 15px;
+.normal-link,
+.normal-link-on-page {
+    background-color: rgb(195, 246, 255);
+    color: black;
+    border: 2px solid black;
+    padding: 1px;
+    width: fit-content;
 }
 
-#franngo {
+.normal-link-on-page {
+    display: inline-block;
+    margin: 0;
+}
+
+.franngo {
     color: rgb(209, 2, 2);
     display: block;
     font-size: 18px;
     width: 120px;
-    margin: 0;
-    margin-top: 40px;
+}
+
+.franngo#on-sidebar {
     margin-left: 10px;
+    margin-top: 40px;
 }
 
 .block {
@@ -147,7 +162,7 @@ p,
 }
 
 p {
-    width: 1150px;
+    max-width: 1150px;
     text-align: justify;
 }
 
@@ -179,12 +194,10 @@ h3 {
     text-align: center
 }
 
-.home-button {
-    background-color: rgb(245, 184, 15);
-    color: black;
+.margin-for-pages {
+    margin: 25px;
 }
 
-.normal-button {
-    background-color: rgb(195, 246, 255);
-    color: black;
+.margin-zero {
+    margin: 0;
 }
