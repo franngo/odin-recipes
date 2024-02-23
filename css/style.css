@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Exo:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&family=Concert+One&display=swap');
 
-html,
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
-    margin: 0;
-    padding: 0px;
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 .web-background {
@@ -14,170 +19,74 @@ body {
     margin: 0;
 }
 
-.just-color-background {
-    background-color: rgb(253, 253, 189);
-    margin-left: 15px;
-}
-
-.full-page {
-    display: block;
-    width: 910px;
-    height: 1560.180px;
-    margin: 0 auto;
-}
-
 .sidebar {
-    display: block;
-    float: inline-start;
-    padding-right: 20px;
     border: 3px solid gray;
     background-color: rgba(202, 228, 240, 0.247);
-    height: 100%;
-    max-width: 208.2px;
-    box-sizing: border-box;
-}
-
-.content {
-    display: inline-block;
-    width: 670px;
-    border-left: 1px solid rgb(83, 83, 83);
-    padding-left: 30px;
-    height: 100%;
-    max-width: 701px;
+    display: flex;
+    flex: auto;
+    min-height: 100%;
+    max-width: fit-content;
+    padding: 0 30px 0 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 #sidebar-message {
-    display: inline-block;
-    width: fit-content;
-    margin-top: 135px;
-    margin-left: 15px;
-    margin-bottom: 0;
     font-weight: 300;
     font-size: 30px;
     font-family: 'Concert One', sans-serif;
-    text-align: left;
+    padding-top: 80px;
+    margin-bottom: 23px;
 }
 
-#first-link {
-    display: block;
-    margin-top: 25px;
-    margin-left: 15px;
-}
-
-.following-link {
-    display: block;
-    margin-top: 40px;
-    margin-left: 15px;
-}
-
-.home-link {
-    background-color: rgb(245, 184, 15);
-    color: black;
-    border: 2px solid black;
-    padding: 1px;
-    width: fit-content;
-    display: inline-block;
+.sidebar-link {
     margin: 0;
-}
-
-.normal-link,
-.normal-link-on-page {
     background-color: rgb(195, 246, 255);
     color: black;
     border: 2px solid black;
-    padding: 1px;
+    padding: 2px;
     width: fit-content;
+    border-radius: 5px;
 }
 
-.normal-link-on-page {
-    display: inline-block;
-    margin: 0;
+.sidebar-link a,
+ul a {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    font-size: 16px;
+}
+
+ul a {
+    font-size: 18px;
+}
+
+.sidebar-link a:hover,
+ul a:hover {
+    color: red;
 }
 
 .franngo {
     color: rgb(209, 2, 2);
-    display: block;
     font-size: 18px;
-    width: 120px;
+    margin-top: 10px;
 }
 
-.franngo#on-sidebar {
-    margin-left: 10px;
-    margin-top: 40px;
+.content {
+    height: 100%;
+    max-width: 48%;
+    display: flex;
+    flex-direction: column;
 }
 
-.block {
-    display: block;
-}
-
-.inline {
-    display: inline;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-#empanadas {
-    height: auto;
-    width: 500px;
-}
-
-#meatloaf {
-    height: auto;
-    width: 500px;
-}
-
-#ravioli {
-    height: auto;
-    width: 500px;
-}
-
-#lets-do-this {
-    height: auto;
-    width: 400px;
-}
-
-#na-ah {
-    height: auto;
-    width: 465px;
-}
-
-#oh-yeah {
-    height: auto;
-    width: 533px;
-}
-
-#couple-cooking {
-    height: auto;
-    width: 533px;
-}
-
-p,
-.un-list,
-.centered-element {
-    font-weight: 300;
-    font-family: sans-serif;
-    font-size: 17px;
-}
-
-p {
-    max-width: 1150px;
-    text-align: justify;
-}
-
-#keep-margin {
-    width: 1190px;
-    text-align: justify;
-}
-
-h3 {
-    font-family: Exo;
+.no-margin-top {
+    margin-top: 0;
 }
 
 .main-heading {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 42px;
+    margin-bottom: 15px;
 }
 
 .food-heading {
@@ -185,19 +94,39 @@ h3 {
     font-size: 35px;
 }
 
-.mid-heading {
+p,
+.un-list {
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+h3 /*important text*/ {
+    font-family: 'Exo';
+}
+
+h2 /*mid heading*/ {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 30px;
 }
 
-.center {
-    text-align: center
+#na-ah {
+    flex: initial;
+    max-width: 465px;
 }
 
-.margin-for-pages {
-    margin: 25px;
+#lets-do-this {
+    flex: initial;
+    max-width: 500px;
 }
 
-.margin-zero {
-    margin: 0;
+#meatloaf {
+    flex: initial;
+    max-width: 500px;
+}
+
+#screen-about1 {
+    flex: initial;
+    border: solid 3px black;
+    margin-top: 25px;
 }
