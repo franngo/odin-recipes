@@ -40,7 +40,8 @@ body {
     margin-bottom: 23px;
 }
 
-.sidebar-link {
+.sidebar-link,
+.home-link {
     margin: 0;
     background-color: rgb(195, 246, 255);
     color: black;
@@ -50,11 +51,26 @@ body {
     border-radius: 5px;
 }
 
+.home-link {
+    background-color: orange;
+}
+
 .sidebar-link a,
-ul a {
+.home-link a,
+ul a,
+h3 a {
     text-decoration: none;
     color: rgb(65, 65, 65);
     font-size: 16px;
+}
+
+h3 a {
+    font-size: 18.72px;
+    color: rgb(156, 103, 103);
+}
+
+.home-link a {
+    font-weight: 900;
 }
 
 ul a {
@@ -62,8 +78,14 @@ ul a {
 }
 
 .sidebar-link a:hover,
-ul a:hover {
+.home-link a:hover,  
+ul a:hover,
+h3 a:hover {
     color: red;
+}
+
+#about-link {
+    font-size: 15px;
 }
 
 .franngo {
